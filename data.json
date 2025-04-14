@@ -1,0 +1,23 @@
+[
+  { "id": 1, "name": "Apple", "price": "1500$" },
+  { "id": 2, "name": "Samsung", "price": "1200$" },
+  { "id": 3, "name": "HP", "price": "1550$" },
+  { "id": 4, "name": "Acer", "price": "1920$" },
+  { "id": 5, "name": "Lenova", "price": "1100$" },
+  { "id": 6, "name": "Apple", "price": "1300$" },
+  { "id": 7, "name": "DELL", "price": "1350$" },
+  { "id": 8, "name": "Samsung", "price": "1100$" },
+  { "id": 9, "name": "Apple", "price": "1000$" },
+  { "id": 10, "name": "Acer", "price": "2100$" },
+  { "id": 11, "name": "Asus", "price": "2200$" },
+  { "id": 12, "name": "Asus", "price": "1980$" },
+  { "id": 13, "name": "LG", "price": "1510$" },
+  { "id": 14, "name": "Xiaomi", "price": "1000$" },
+  { "id": 15, "name": "Huawei", "price": "1300$" },
+  { "id": 16, "name": "Xiaomi", "price": "1800$" },
+  { "id": 17, "name": "DELL", "price": "1600$" },
+  { "id": 18, "name": "Razer", "price": "1660$" },
+  { "id": 19, "name": "Lenova", "price": "1490$" },
+  { "id": 20, "name": "MSI", "price": "1670$" }
+  
+]
