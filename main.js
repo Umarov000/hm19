@@ -18,8 +18,17 @@ let server = http.createServer((req, res) => {
   const pathParts = pathname.split("/").filter(Boolean); 
   const path = pathParts[0];
   const id = pathParts[1];
+  if(path == "products" && req.method == "GET" && query.search){
+    let data = readData()
+    let search = query.search.toString().toLowerCase();
+    let retData = data.filter((item) =>
+      item.name.toLowerCase().includes(search)
+    );
+    res.end(JSON.stringify(retData));
 
-  if (path == "products" && req.method == "GET" && query.limit && query.skip) {
+  }
+
+  else if (path == "products" && req.method == "GET" && query.limit && query.skip) {
     let data = readData();
     const limit = parseInt(query.limit);
     const skip = parseInt(query.skip);
@@ -80,14 +89,6 @@ let server = http.createServer((req, res) => {
         res.end("Product updated successully");
       }
     });
-  }else if(path == "products" && req.method == "GET" && query.search){
-    let data = readData()
-    let search = query.search.toString().toLowerCase();
-    let retData = data.filter((item) =>
-      item.name.toLowerCase().includes(search)
-    );
-    res.end(JSON.stringify(retData));
-
   }
 });
 
